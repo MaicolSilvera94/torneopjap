@@ -36,13 +36,13 @@
                       <tr>
                        <td>2</td>
                          <td>Juz. del Norte</td>
-                         <td>10</td>
+                         <td>13</td>
                          <td>5</td>
                          <td>+14</td>
                        </tr>
                        <td>3</td>
                          <td>Hernandarias</td>
-                         <td>13</td>
+                         <td>10</td>
                          <td>6</td>
                          <td>+10</td>
                        </tr>
