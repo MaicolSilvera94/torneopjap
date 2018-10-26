@@ -70,13 +70,13 @@
                          <td>5</td>
                          <td>-7</td>
                        </tr>
-                       <td>7</td>
+                       <td>8</td>
                          <td>Penal</td>
                          <td>1</td>
                          <td>6</td>
                          <td>-29</td>
                        </tr>
-                       <td>8</td>
+                       <td>9</td>
                          <td>Niñez</td>
                          <td>0</td>
                          <td>6</td>
