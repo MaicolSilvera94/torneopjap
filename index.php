@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Solicitud - Servicios</title>
+    <title>Torneo - PJAP</title>
     <meta name="description" content="">
     <?php include 'includes/head.php'; ?>
   </head>
