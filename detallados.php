@@ -13,7 +13,7 @@
       <main>
           <section class="section-info">
               <div class="container">
-                  <h2 class="title">TORNEO DE INTEGRACION JUDICIAL</h2>
+                  <h3 class="title">Tabla de Puntuaciones</h3>
                   <div class="panel">
                     <table class="table table-bordered table-striped table-hover">
                     <thead>
@@ -23,6 +23,11 @@
                         <th>PTS</th>
                         <th>PJ</th>
                         <th>DG</th>
+                        <th>PG</th>
+                        <th>PE</th>
+                        <th>PP</th>
+                        <th>GF</th>
+                        <th>GC</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -96,7 +101,5 @@
       </main>
 
       <?php include 'includes/script.php'; ?>
-
   </body>
-
 </html>
