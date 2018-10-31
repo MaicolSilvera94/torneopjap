@@ -18,7 +18,7 @@
         </li>
 
         <li>
-          <a href="#"><i class="fa fa-link"></i> <span>Puntuaciones</span></a>
+          <a href="puntuaciones.php"><i class="fa fa-link"></i> <span>Puntuaciones</span></a>
         </li>
 
         <li>
