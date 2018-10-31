@@ -1,7 +1,7 @@
 <?php
     #conexion a base de datos
     $user = 'root'; //demo_maicol -- root
-    $password = ''; //kD,q(d+B5o)v
+    $password = 'Maicol199471'; //kD,q(d+B5o)v
     $host = 'localhost';
     $dbname = 'torneo'; //demo_maicol -- cursodwp
     $parametros = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'");
