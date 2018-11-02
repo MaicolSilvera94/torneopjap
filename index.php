@@ -28,20 +28,17 @@ include('funciones/funciones.php');
                         <th>DG</th>
                       </tr>
                     </thead>
-                    <?php foreach(getPuntuaciones(5) as $fila ){   ?>
+                    <?php foreach(getPuntuaciones(10) as $fila ){   ?>
                     <tbody>
                        <tr>
                         <td>1</td>
                         <td><?php echo $fila['equipo'];?></td>
                         <td><?php echo $fila['tp'];?></td>
                         <td><?php echo $fila['pj'];?></td>
-                        <td>+<?php echo $fila['dg'];?></td>
+                        <td><?php echo $fila['dg'];?></td>
                       </tr>
                       </tbody>
                       <?php }  ?>
-
-
-
                   </table>
                   </div>
                   <?php include 'includes/footer.php'; ?>
