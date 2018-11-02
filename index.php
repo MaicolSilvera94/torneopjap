@@ -1,4 +1,7 @@
-<!DOCTYPE <!DOCTYPE html>
+<?php
+include('funciones/funciones.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -25,64 +28,20 @@
                         <th>DG</th>
                       </tr>
                     </thead>
+                    <?php foreach(getPuntuaciones(5) as $fila ){   ?>
                     <tbody>
                        <tr>
                         <td>1</td>
-                        <td>Seguridad</td>
-                        <td>13</td>
-                        <td>5</td>
-                        <td>+14</td>
+                        <td><?php echo $fila['equipo'];?></td>
+                        <td><?php echo $fila['tp'];?></td>
+                        <td><?php echo $fila['pj'];?></td>
+                        <td>+<?php echo $fila['dg'];?></td>
                       </tr>
-                      <tr>
-                       <td>2</td>
-                         <td>Hernandarias</td>
-                         <td>10</td>
-                         <td>5</td>
-                         <td>+14</td>
-                       </tr>
-                       <td>3</td>
-                         <td>Juz. del Norte</td>
-                         <td>13</td>
-                         <td>6</td>
-                         <td>+10</td>
-                       </tr>
-                       <td>4</td>
-                         <td>Informatica</td>
-                         <td>8</td>
-                         <td>5</td>
-                         <td>+6</td>
-                       </tr>
-                       <td>5</td>
-                         <td>Camara</td>
-                         <td>8</td>
-                         <td>5</td>
-                         <td>+6</td>
-                       </tr>
-                       <td>6</td>
-                         <td>Civil</td>
-                         <td>8</td>
-                         <td>5</td>
-                         <td>-2</td>
-                       </tr>
-                       <td>7</td>
-                         <td>Defensoria</td>
-                         <td>6</td>
-                         <td>5</td>
-                         <td>-7</td>
-                       </tr>
-                       <td>8</td>
-                         <td>Penal</td>
-                         <td>1</td>
-                         <td>6</td>
-                         <td>-29</td>
-                       </tr>
-                       <td>9</td>
-                         <td>Niñez</td>
-                         <td>0</td>
-                         <td>6</td>
-                         <td>-22</td>
-                       </tr>
-                    </tbody>
+                      </tbody>
+                      <?php }  ?>
+
+
+
                   </table>
                   </div>
                   <?php include 'includes/footer.php'; ?>

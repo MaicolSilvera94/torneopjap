@@ -55,7 +55,7 @@ desired effect
   <!-- HEADER -->
   <?php include 'includes/header.php'; ?>
   <?php
-    $sql = "SELECT * from puntuaciones ORDER by equipo";
+    $sql = "SELECT * from puntuaciones ORDER by tp DESC";
     $query = $connection->prepare($sql);
     $query->execute();
 
