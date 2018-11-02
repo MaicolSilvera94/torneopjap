@@ -28,10 +28,11 @@ include('funciones/funciones.php');
                         <th>DG</th>
                       </tr>
                     </thead>
-                    <?php foreach(getPuntuaciones(10) as $fila ){   ?>
+                    <?php $i=0; foreach(getPuntuaciones(10) as $fila ){   ?>
                     <tbody>
+                      <?php $i++; ?>
                        <tr>
-                        <td>1</td>
+                        <td><?php echo $i ?></td>
                         <td><?php echo $fila['equipo'];?></td>
                         <td><?php echo $fila['tp'];?></td>
                         <td><?php echo $fila['pj'];?></td>
