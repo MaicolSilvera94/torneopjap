@@ -76,12 +76,13 @@ desired effect
        if(isset($_POST)){
 
             if($_POST['actualizar'] == 'actualizar' && $_POST['nombre'] != '' && $_POST['id'] > 0){
-                   $sql = "UPDATE usuarios set nombre = :nombre, activo=:activo WHERE id = " . $_POST['id'];
+                   $sql = "UPDATE usuarios set nombre = :nombre, password = :password, activo=:activo WHERE id = " . $_POST['id'];
                    $data =  array(
                         'nombre' => $_POST['nombre'],
+                        'password' => md5($_POST['password']),
                         'activo' => $_POST['activo']
                    );
-                    
+
                    $query = $connection->prepare($sql);
 
 
@@ -93,14 +94,14 @@ desired effect
 
 
                  }
-                   
+
             }
 
        }
 
    ?>
  <?php include 'includes/mensajes.php';?>
-  
+
   <!-- ASIDE - SIDEBAR  -->
   <?php include 'includes/aside.php'; ?>
 
@@ -114,28 +115,28 @@ desired effect
         <li><a href="index.php"><i class="fa fa-home"></i> Inicio</a></li>
         <li><span>Usuarios</span></li>
       </ol>
-    
+
     </section>
     <section class="content container-fluid">
-      
+
 <div class="panel">
         <div class="row">
           <div class="col-xs-12">
-             
+
             <a href="usuarios.php" class="btn btn-warning btn-lg pull-right" href=""> <i class="fa fa-close"></i> Salir</a>
         </div>
-        
+
         </div>
- 
-       
+
+
       </div>
 
       <div class="panel">
         <div class="row">
-          <?php if($total > 0) { 
+          <?php if($total > 0) {
                  $usuario = $query->fetchAll()[0];
-                // var_dump($usuario);                 
-              ?>  
+                // var_dump($usuario);
+              ?>
             <form action="usuarios_edit.php" method="POST">
                 <div class="form-group col-md-4">
                     <label>Nombre</label>
@@ -158,14 +159,14 @@ desired effect
                 <div class="col-md-2">
                         <br>
                         <input type="hidden" name="id"  value="<?php echo $usuario['id']; ?>">
-                       <button type="submit" name="actualizar" value="actualizar" class="btn btn-primary">Actualizar</button> 
+                       <button type="submit" name="actualizar" value="actualizar" class="btn btn-primary">Actualizar</button>
                 </div>
 
             </form>
           <?php } else {  ?>
 
             <a href="usuarios.php" class="btn btn-warning">El usuario no exite, volver a la lista</a>
-          
+
           <?php } ?>
 
         </div>

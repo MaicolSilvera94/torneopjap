@@ -114,9 +114,9 @@ desired effect
             <td><?php echo $file['id']; ?></td>
             <td>
                 <?php if($file['avatar'] != '') {   ?>
-                  <img src="../images/equipos/<?php echo $file['avatar']; ?>" width="50px">
+                  <img src="../images/puntuaciones/<?php echo $file['avatar']; ?>" width="50px">
                 <?php } else {  ?>
-                  <img src="../images/equipos/no-avatar.png" width="50px">
+                  <img src="../images/puntuaciones/no-avatar.png" width="50px">
                 <?php } ?>
             </td>
             <td><?php echo $file['equipo']; ?></td>

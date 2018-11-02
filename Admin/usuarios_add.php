@@ -72,7 +72,7 @@ desired effect
     if( isset($_POST) ){
         //Si existe un POST, validar que los campos cumplan con los requisitos
         if($_POST['guardar'] == 'guardar' && $_POST['nombre'] != '' && $_POST['password'] != '' && $_POST['activo'] != '' && $_POST['emial'] != '' ){
-            
+
             //Preparar variables segun los post recibidos
             $nombre = $_POST['nombre'];
             $password = md5($_POST['password']);
@@ -82,7 +82,7 @@ desired effect
 
             //Definir una variable con la consulta SQL.
             $sql = 'INSERT INTO usuarios (nombre, email,  password, avatar, activo, fecha_add) VALUES (:nombre, :emial, :password, :avatar, :activo, NOW() )';
-            
+
             //Definiendo una variable $data con los valores a guardase en la consulta sql
             $data = array(
                 'nombre' => $nombre,
@@ -92,18 +92,18 @@ desired effect
                 'avatar' => $avatar
             );
 
-           //Prepamos la conexion  
+           //Prepamos la conexion
            $query = $connection->prepare($sql);
-            
+
             //Definimos un try catch para que devuelta un estado
             try{
-                 //Si sale bien se guarda los reigstros   
+                 //Si sale bien se guarda los reigstros
                  if( $query->execute($data) ){
                      //mensaje verdadero
                      $mensaje = '<p class="alert alert-success">Registrado correctamente</p>';
                      echo '<script> window.location = "usuarios.php"; </script>';
-                  
-                    
+
+
                  } else {
                      //mesnaje falso
                     $mensaje = '<p class="alert alert-danger">Ocurrio un error al guardar</p>';
@@ -112,18 +112,18 @@ desired effect
             } catch (PDOException $e) {
                 //si sale mal devuelve el error con el motivo
                 print_r($e);
-                
+
                 $mensaje = '<p class="alert alert-danger">'. $e .'</p>';
-           
+
             }
-        } 
+        }
 
     }
 
-  
+
   ?>
  <?php include 'includes/mensajes.php';?>
-  
+
   <!-- ASIDE - SIDEBAR  -->
   <?php include 'includes/aside.php'; ?>
 
@@ -131,26 +131,26 @@ desired effect
   <div class="content-wrapper">
     <section class="content-header">
       <h1>
-        Registrar nuevo usuario 
+        Registrar nuevo usuario
       </h1>
       <ol class="breadcrumb">
         <li><a href="index.php"><i class="fa fa-home"></i> Inicio</a></li>
         <li><span>Usuarios</span></li>
       </ol>
-    
+
     </section>
     <section class="content container-fluid">
-      
+
 <div class="panel">
         <div class="row">
           <div class="col-xs-12">
-             
+
             <a href="usuarios.php" class="btn btn-warning btn-lg pull-right" href=""> <i class="fa fa-close"></i> Salir</a>
         </div>
-        
+
         </div>
- 
-       
+
+
       </div>
 
       <div class="panel">
@@ -187,13 +187,13 @@ desired effect
 
 
                 <script>
-                
+
 
                 </script>
 
                 <div class="col-md-2">
                         <br>
-                       <button type="submit" name="guardar" value="guardar" class="btn btn-primary">Guardar</button> 
+                       <button type="submit" name="guardar" value="guardar" class="btn btn-primary">Guardar</button>
                 </div>
 
             </form>

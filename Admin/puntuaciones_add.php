@@ -31,14 +31,13 @@
 
 
         <script>
-         function subir_imagen(input)
+         function subir_imagen(input, carpeta)
         {
             self.name = 'opener';
-            var name = document.getElementsByName("nombre")[0].value;
-            remote = open('gestor/img_usuarios.php?name='+name+'&input='+input,'remote', 'align=center,width=600,height=300,resizable=yes,status=yes');
+            var name = null;
+            remote = open('gestor/subir_imagen.php?name='+name+'&input='+input+'&carpeta='+carpeta ,'remote', 'align=center,width=600,height=300,resizable=yes,status=yes');
             remote.focus();
         }
-
         </script>
 </head>
 <!--
@@ -150,20 +149,15 @@ desired effect
         <li><a href="index.php"><i class="fa fa-home"></i> Inicio</a></li>
         <li><span>Puntuaciones ADD</span></li>
       </ol>
-
     </section>
     <section class="content container-fluid">
 
-<div class="panel">
+      <div class="panel">
         <div class="row">
           <div class="col-xs-12">
-
             <a href="puntuaciones.php" class="btn btn-warning btn-lg pull-right" href=""> <i class="fa fa-close"></i> Salir</a>
+          </div>
         </div>
-
-        </div>
-
-
       </div>
 
       <div class="panel">
@@ -216,7 +210,7 @@ desired effect
 
              <div class="form-group col-md-2">
                  <label>Avatar</label>
-                 <input type="text" name="avatar"  class="form-control" id="avatar"  onclick="subir_imagen('avatar')">
+                 <input type="text" name="avatar"  class="form-control" id="imagen"  onclick="subir_imagen('imagen', 'puntuaciones')">
              </div>
 
                  <div class="form-group col-md-2">
@@ -226,7 +220,7 @@ desired effect
                         <option value="0">Inactivo</option>
                     </select>
                 </div>
-                
+
                 <script>
 
                 </script>
