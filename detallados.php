@@ -23,14 +23,14 @@ include('funciones/funciones.php');
                       <tr>
                         <th>UBIC.</th>
                         <th>EQUIPOS</th>
-                        <th>PTS</th>
                         <th>PJ</th>
-                        <th>DG</th>
                         <th>PG</th>
                         <th>PE</th>
                         <th>PP</th>
                         <th>GF</th>
                         <th>GC</th>
+                        <th>DG</th>
+                        <th>TP</th>
                       </tr>
                     </thead>
                     <?php foreach(getPuntuaciones(10) as $fila ){   ?>
