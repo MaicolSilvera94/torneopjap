@@ -16,7 +16,7 @@
 			    <ul class="nav navbar-nav navbar-right">
 			        <li><a href="index.php">Inicio</a></li>
 			        <li><a href="detallados.php">Detallados</a></li>
-			        <li><a href="equipos.php">Equipos</a></li>
+			        <li><a href="equipos2.0.php">Equipos</a></li>
 			        <li><a href="#">Resultados</a></li>
 							<li><a href="#">Cerrar Sesion</a></li>
 			    </ul>
