@@ -27,8 +27,8 @@
     function getPuntuaciones($cantidad){
          include 'conexion/conexion.php';
          //$sql = "SELECT * FROM puntuaciones WHERE visible = 1 AND ORDER by tp LIMIT " . $cantidad;
-         $sql = "SELECT * from puntuaciones ORDER by tp DESC";
-         $sql = "SELECT * from puntuaciones ORDER by dg DESC";
+         $sql = "SELECT * from puntuaciones ORDER by dg AND tp DESC";
+         //$sql = "SELECT * from puntuaciones ORDER by dg DESC";
          $query = $connection->prepare($sql);
          $query->execute();
          return $query->fetchAll();
