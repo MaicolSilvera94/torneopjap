@@ -111,6 +111,31 @@ footer h2 {
 	padding: 10px 0;
 }
 
+.section-info .box-clasi{
+border: 1px solid #ccc;
+padding: 5px;
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: center;
+}
+.section-info .box-clas2{
+border: 1px solid #ccc;
+padding: 5px;
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: center;
+margin-left: 25%;
+margin-right: 25%;
+}
+.section-info .box-clas3{
+border: 1px solid #ccc;
+padding: 5px;
+margin-top: 30px;
+margin-bottom: 30px;
+text-align: center;
+margin-left: 35%;
+margin-right: 35%;
+}
 .section-info .box-info {
 	border: 1px solid #ccc;
 	padding: 80px;

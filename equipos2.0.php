@@ -24,22 +24,70 @@ include('funciones/funciones.php');
               </div>
                 <div class="col-sm-3">
                 <div class="box-servicios">
-                  <a href="#">
+                  <a href="informatica.php">
                     <img src="images/equipos/no-avatar.png" width="50px">
                   </a>
                   <h4><a href="informatica.php">Informatica</a></h4>
-
                 </div>
               </div>
               <div class="col-sm-3">
               <div class="box-servicios">
-                <a href="#">
+                <a href="seguridad.php">
                   <img src="images/equipos/no-avatar.png" width="50px">
                 </a>
                 <h4><a href="seguridad.php">Seguridad</a></h4>
               </div>
             </div>
+            <div class="col-sm-3">
+            <div class="box-servicios">
+              <a href="civil.php">
+                <img src="images/equipos/no-avatar.png" width="50px">
+              </a>
+              <h4><a href="civil.php">Civil</a></h4>
             </div>
+          </div>
+            <div class="col-sm-3">
+              <div class="box-servicios">
+                <a href="penal.php">
+                  <img src="images/equipos/no-avatar.png" width="50px">
+                </a>
+                <h4><a href="penal.php">Penal</a></h4>
+              </div>
+            </div>
+
+          <div class="col-sm-3">
+            <div class="box-servicios">
+              <a href="niñes.php">
+                <img src="images/equipos/no-avatar.png" width="50px">
+              </a>
+              <h4><a href="niñes.php">Niñes</a></h4>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="box-servicios">
+              <a href="camara.php">
+                <img src="images/equipos/no-avatar.png" width="50px">
+              </a>
+              <h4><a href="camara.php">Camara</a></h4>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="box-servicios">
+              <a href="defensoria.php">
+                <img src="images/equipos/no-avatar.png" width="50px">
+              </a>
+              <h4><a href="defensoria.php">Defensoria</a></h4>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="box-servicios">
+              <a href="norte.php">
+                <img src="images/equipos/no-avatar.png" width="50px">
+              </a>
+              <h4><a href="norte.php">Juz. Del Norte</a></h4>
+            </div>
+          </div>
+          </div>
             <?php include 'includes/footer.php'; ?>
           </div>
         </section>
