@@ -18,7 +18,7 @@
 			        <li><a href="detallados.php">Detallados</a></li>
 			        <li><a href="equipos2.0.php">Equipos</a></li>
 							<li><a href="clasificatoria.php">Clasificatoria</a></li>
-			        <li><a href="#">Resultados</a></li>
+			        <li><a href="resultados.php">Resultados</a></li>
 							<li><a href="#">Cerrar Sesion</a></li>
 			    </ul>
 			</div>

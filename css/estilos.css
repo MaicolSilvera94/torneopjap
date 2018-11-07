@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu');
 body {
-	background: #96908E;
+	/*background: #96908E;*/
+	background: #ddd;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -51,8 +52,10 @@ table {
 
 /* INICIO ESTILO FOOTER */
 footer {
-	background: #555555;
-	color: #ffffff;
+	/*background: #555555;
+	color: #ffffff;*/
+	background: white;
+	color: Black;
 	text-align: center;
 }
 
@@ -107,8 +110,13 @@ footer h2 {
 
 /* INICIO ESTILOS PARA LA SECCION INFO DE LA PAGINA */
 .section-info {
-	background: #96908E;
+	/*background: #96908E;*/
+	background: #DDD;
 	padding: 10px 0;
+}
+
+.section-info .box-ti{
+background: white;
 }
 
 .section-info .box-clasi{
@@ -117,6 +125,8 @@ padding: 5px;
 margin-top: 30px;
 margin-bottom: 30px;
 text-align: center;
+background: white;
+border-radius: 15px;
 }
 .section-info .box-clas2{
 border: 1px solid #ccc;
@@ -126,6 +136,7 @@ margin-bottom: 30px;
 text-align: center;
 margin-left: 25%;
 margin-right: 25%;
+background: white;
 }
 .section-info .box-clas3{
 border: 1px solid #ccc;
@@ -135,6 +146,7 @@ margin-bottom: 30px;
 text-align: center;
 margin-left: 35%;
 margin-right: 35%;
+background: white;
 }
 .section-info .box-info {
 	border: 1px solid #ccc;
