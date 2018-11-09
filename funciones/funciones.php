@@ -34,6 +34,14 @@
          return $query->fetchAll();
     }
 
+    function getResultados($cantidad){
+         include 'conexion/conexion.php';
+         $sql = "SELECT * FROM resultados WHERE activo = 1 LIMIT " . $cantidad;
+         $query = $connection->prepare($sql);
+         $query->execute();
+         return $query->fetchAll();
+    }
+
 
 function getClientes($cantidad)
 {

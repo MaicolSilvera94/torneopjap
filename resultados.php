@@ -16,34 +16,19 @@ include('funciones/funciones.php');
       <main>
         <section class="section-info">
           <div class="container">
-            <h2 class="title">Resultado de la Fecha DD/MM/AAAA</h2>
+            <?php foreach(getResultados(1) as $fila ){   ?>
+            <h2 class="title">Resultado de la Fecha <?php echo $fila['fecha_add'];?></h2>
+            <?php } ?>
             <div class="row">
+              <?php foreach(getResultados(5) as $fila ){   ?>
               <div class="col-sm-4">
                 <div class="box-clasi">
-                  <h5>Equipo 1 | 2 - 2 | Equipo 2</h5>
+                  <h5><?php echo $fila['equipo1'];?>   | <?php echo $fila['resultado1'];?> - <?php echo $fila['resultado2'];?> |   <?php echo $fila['equipo2'];?></h5>
                 </div>
               </div>
-              <div class="col-sm-4">
-                <div class="box-clasi">
-                  <h5>Equipo 3 | 2 - 2 | Equipo 4</h5>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="box-clasi">
-                  <h5>Equipo 5 | 2 - 2 | Equipo 6</h5>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="box-clasi">
-                  <h5>Equipo 7 | 2 - 2 | Equipo 8</h5>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="box-clasi">
-                  <h5>Equipo 9 | 0 - 0 | Libre</h5>
-                </div>
-              </div>
+              <?php } ?>
             </div>
+
           </div>
         </section>
           <section class="section-info">
